@@ -1,68 +1,31 @@
-# Snappy - Chat Application 
-Snappy is chat application build with the power of MERN Stack. You can find the tutorial [here](https://www.youtube.com/watch?v=otaQKODEUFs)
+# 💬 MERN Chat Application
 
+A real-time chat application built using the **MERN stack** (MongoDB, Express.js, React.js, Node.js) and **Socket.IO** for live communication. Users can register, log in, and chat with others instantly in a modern and responsive interface.
 
-![login page](./images/snappy_login.png)
+---
 
-![home page](./images/snappy.png)
+## 🚀 Features
 
-## Installation Guide
+- ✅ User registration and login with JWT authentication
+- 💬 Real-time one-to-one chat using Socket.IO
+- 🟢 Online/offline status indicators
+- 🗂️ Chat history stored in MongoDB
+- 🎨 Responsive UI built with React
 
-### Requirements
-- [Nodejs](https://nodejs.org/en/download)
-- [Mongodb](https://www.mongodb.com/docs/manual/administration/install-community/)
+---
 
-Both should be installed and make sure mongodb is running.
-### Installation
+## 🛠️ Tech Stack
 
-#### First Method
-```shell
-git clone https://github.com/koolkishan/chat-app-react-nodejs
-cd chat-app-react-nodejs
-```
-Now rename env files from .env.example to .env
-```shell
-cd public
-mv .env.example .env
-cd ..
-cd server
-mv .env.example .env
-cd ..
-```
+- **Frontend**: React, Socket.IO Client, Axios
+- **Backend**: Node.js, Express.js, Socket.IO
+- **Database**: MongoDB with Mongoose
+- **Authentication**: JWT + bcrypt
 
-Now install the dependencies
-```shell
-cd server
-yarn
-cd ..
-cd public
-yarn
-```
-We are almost done, Now just start the development server.
+---
 
-For Frontend.
-```shell
-cd public
-yarn start
-```
-For Backend.
+## 📦 Getting Started
 
-Open another terminal in folder, Also make sure mongodb is running in background.
-```shell
-cd server
-yarn start
-```
-Done! Now open localhost:3000 in your browser.
-
-#### Second Method
-- This method requires docker and docker-compose to be installed in your system.
-- Make sure you are in the root of your project and run the following command.
-
-```shell
-docker compose build --no-cache
-```
-after the build is complete run the containers using the following command
-```shell
-docker compose up
-```
-now open localhost:3000 in your browser.
+### 1. Clone the repository
+```bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+cd YOUR_REPO_NAME
